@@ -1,0 +1,51 @@
+<div class="main">
+
+	<div class="devider">
+		<div class="left white">
+			
+		</div>
+		<div class="right grey">
+			
+		</div>
+	</div>
+
+
+
+
+
+	<div class="main_row">
+			<div class="content_section">
+				<h1 class="animate__animated animate__pulse text_white">Aditya R. Jani</h1>
+				<p class="text_white">{{profileInfo}}</p>
+			</div>
+		
+		
+			<div class="mid_img">
+                <a [routerLink]="['/items']" title="List Page">
+                    <img src="../../../assets/img/tasks2.png" alt="task"></a>
+                <div class="labelInfo">
+                    <div>
+                        <i class="fa fa-arrow-circle-up iconEffect" aria-hidden="true"></i>
+                    </div>
+                    <div class="labelText"><h2>Click to view List Page</h2></div>
+                </div>
+			</div>
+			
+		
+		
+			<div class="side_menu">
+				<h1>Details</h1>
+				
+				<ul class="list-unstyled pt-4">
+					<li class="" *ngFor="let details of contactDetails">
+                        <i class="{{details.icon}}" aria-hidden="true"></i> 
+                        <span><a href="{{details.url}}" class=" "> {{details.name}}: </a></span>
+                        <span><a>{{details.value}}</a></span>
+                    </li>
+				</ul>
+			</div>
+			
+		
+	</div>
+
+</div>	

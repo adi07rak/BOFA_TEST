@@ -1,0 +1,27 @@
+<div class="section">
+    
+    <h1 class="heading">
+        <span>
+            <i class="fa fa-chevron-left" style="cursor: pointer;"
+            aria-hidden="true" [routerLink]="['/']"></i>
+        </span> Grocery List</h1>
+
+    <div class="row">
+        <div class="list_item" *ngFor= "let item of itemsList; let i=index">
+            <div class="qyt_div">
+                <span [title]="item.qty">QTY: {{item.qty}}</span>
+            </div>
+
+            <div class="item_name">
+                <h1 [title]="item.item">{{item.item}}</h1>
+                <hr class="border">
+                <p title="{{item.type}}">{{item.type}}</p>
+            </div>
+
+            <div class="category">
+                <span [title]="item.category">{{item.category}}</span>
+            </div>
+        </div>
+
+    </div>
+</div>

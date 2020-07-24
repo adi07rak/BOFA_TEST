@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	box-sizing: border-box;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	
+}
+
+body::-webkit-scrollbar
+{
+  width: 12px;
+}
+body::-webkit-scrollbar-track
+{
+  background-color: #2C3A47;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color:#E17055;
+  cursor: pointer;
+ }
+ h1
+ {
+ 	font-size: 36px !important;
+ 	color: #2C3A47;
+ 	margin: 10px 0px;
+
+ }
+ p
+ {
+ 	font-size: 16px;
+ 	color: #2C3A47; 
+ 	line-height: 150%;
+	 font-weight: bold;
+	 padding-top: 3px;
+ }
+

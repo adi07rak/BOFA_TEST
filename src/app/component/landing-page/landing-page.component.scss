@@ -1,0 +1,201 @@
+.labelInfo {
+    margin: 10% auto 0 auto;
+    width: 80%;
+}
+
+.labelText {
+    background-color: black;
+    color: white;
+    padding : 5px 15px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.main
+ {
+ 	height:100vh;
+	 position: relative;
+	 overflow: hidden;
+
+ }
+ .white
+ {
+ 	background-color: white;
+ 	width: 50%;
+ 	float: left;
+ 	min-height: 518px;
+ 	padding: 30px 0px;
+ }
+ 
+ .grey
+ {
+ 	background-color: grey;
+ 	width: 50%;
+ 	float: left;
+ 	min-height: 518px;
+ 	padding: 30px 0px;
+ }
+ .main_row
+ {
+	margin: 0px auto;
+	width: 100%;
+	position: absolute;
+    top: 110px;
+    height: 425px;
+
+
+ }
+ .text_white
+	 {
+		text-align: justify;
+	 }
+ .content_section
+ {
+ 	width: 30%;
+ 	float: left;
+ 	height: auto;
+ 	box-sizing: border-box;
+ 	padding: 20px;
+ }
+ .my_btn
+ {
+ 	height: 40px;
+ 	width: 100px;
+ 	border: 5px double black;
+ 	color: black;
+ 	cursor: pointer;
+	margin-top: 20px;
+
+ }
+
+
+.side_menu
+{
+	width: 30%;
+ 	float: left;
+ 	height: auto;
+ 	
+}
+.side_menu ul
+{
+	list-style-type: none;
+	font-size: medium;
+}
+.side_menu ul li
+{
+	line-height: 50px;
+}
+.side_menu ul li a
+{
+	text-decoration: none;
+	color: white;
+}
+.side_menu ul li a:hover
+{	
+	color: black;
+}
+
+.side_menu ul li i
+{
+	color: grey;
+	background-color: black;
+	padding: 6px;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin-right: 10px;
+    transition: 0.5s all;
+    font-size: medium;
+}
+.side_menu ul li i:hover
+{
+	transform: rotateY(360deg);
+	cursor: pointer;
+	transition: 1s transform ease-in;
+}
+
+.iconEffect {
+    font-size: 50px;
+    background-color: white;
+    padding-bottom: 0px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.mid_img
+{
+	width: 40%;
+ 	float: left;
+     height: 465px;
+    text-align: center;
+
+}
+.mid_img img
+{
+	width: 250px;
+	height: 250px;
+	object-fit: contain;
+    animation: 4s file_move infinite ease-in;
+    background-color: white;
+    border-radius: 50%;
+
+}
+@keyframes file_move
+{
+	0%{
+		transform: translateY(20px);
+		transition: 0.5s transform ease-in; 
+	}
+	50%{
+			transform: translateY(-20px);
+		transition: 0.5s transform ease-in; 
+	}
+	100%{
+			transform: translateY(20px);
+		transition: 0.5s transform ease-in; 
+	}
+
+}
+
+@media screen and (max-width: 768px)
+{
+	.main
+ 	{
+	 overflow: visible;
+ 	}
+	.white
+	 {
+	 	background-color: grey;
+         width: 100%;
+         min-height: 1175px;
+	 	
+	 }
+	 .grey
+	 {
+	 	width: 0%;
+	 }
+	 .text_white
+	 {
+		color: white;
+	 }
+
+	.content_section
+	 {
+	 	width: 100%;
+	
+	 }
+	 .mid_img
+	{
+		width: 100%;
+
+	}
+	.side_menu
+	{
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+	}
+}
